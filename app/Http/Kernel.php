@@ -36,11 +36,16 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            // Custom
+            \App\Http\Middleware\smtpAndFcmConfig::class,
         ],
 
         'api' => [
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            // Custom
+            'smtpAndFcmConfig',
+            'LanguageSwitcherApi'
         ],
     ];
 
@@ -62,5 +67,13 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        // Custom
+        'Manager' => \App\Http\Middleware\Manager::class,
+        'checkRole' => \App\Http\Middleware\checkRole::class,
+        'smtpAndFcmConfig' => \App\Http\Middleware\smtpAndFcmConfig::class,
+        'Domain' => \App\Http\Middleware\Domain::class,
+        'UserAuth' => \App\Http\Middleware\UserAuth::class,
+        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'LanguageSwitcherApi' => \App\Http\Middleware\LanguageSwitcherApi::class,
     ];
 }
