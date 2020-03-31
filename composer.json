@@ -10,11 +10,14 @@
     "require": {
         "php": "^7.2.5",
         "apility/laravel-fcm": "^1.4",
+        "cornford/googlmapper": "3.*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "intervention/image": "^2.5",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "spatie/laravel-analytics": "^3.9"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -40,6 +43,11 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+        ],
+        "files": [
+            "app/Helpers/menuAndPermissions.php",
+            "app/Helpers/NotificationConfig.php",
+            "app/Helpers/help.php"
         ]
     },
     "autoload-dev": {

@@ -174,9 +174,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
         // FCM
-		LaravelFCM\FCMServiceProvider::class,
+        LaravelFCM\FCMServiceProvider::class,
+        // Analytics
+        Spatie\Analytics\AnalyticsServiceProvider::class,
+        // Google Maper
+        Cornford\Googlmapper\MapperServiceProvider::class,
+        // Images
+		Intervention\Image\ImageServiceProvider::class,
 
     ],
 
@@ -233,6 +238,12 @@ return [
         // FCM
         'FCM'      => LaravelFCM\Facades\FCM::class,
         'FCMGroup' => LaravelFCM\Facades\FCMGroup::class, // Optional
+        // Analytics
+        'Analytics' => Spatie\Analytics\AnalyticsFacade::class,
+        // Google Maper
+        'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
+        // Imgaes
+		'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 
