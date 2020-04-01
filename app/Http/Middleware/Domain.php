@@ -15,7 +15,7 @@ class Domain
      */
     public function handle($request, Closure $next)
     {
-        if(URL::to('/') !== 'http://localhost:8888/laravel_boulareblate')
+        if(URL::to('/') !== 'http://127.0.0.1:8000')
         {
             abort(400);
         }

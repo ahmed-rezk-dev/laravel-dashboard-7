@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 	<!-- style -->
 	@section('style')
 
@@ -26,18 +26,23 @@
 					<div class="col-sm-3">الهاتف : {{$message->phone}}</div>
 					<div class="col-sm-3">التاريخ : {{$message->created_at->diffForHumans()}}</div>
 				</div>
-				
+
 				<br>
 				<div class="col-sm-12" style="margin-top: 20px;margin-bottom: 25px">
 					{{$message->message}}
 				</div>
 				<div class="col-sm-12" style="margin-top:20px" >
-					<div class="btn btn-danger col-sm-3">حذف <i style="color: #fff" class=" icon-trash"></i> </div>
 
-					<div class="btn btn-primary col-sm-3 SMS" 
-						data-toggle="modal" 
-						data-target="#exampleModalSMS" 
-						data-phone="{{$message->phone}}" 
+                    <form action="{{route('deletemessage')}}" method="POST">
+                        {{csrf_field()}}
+                        <input type="hidden" name="id" value="{{$message->id}}">
+                        <button class="btn btn-danger generalDelete col-sm-3" type="submit">حذف <i style="color: #fff" class=" icon-trash"></i> </button>
+                    </form>
+
+					<div class="btn btn-primary col-sm-3 SMS"
+						data-toggle="modal"
+						data-target="#exampleModalSMS"
+						data-phone="{{$message->phone}}"
 						data-email="{{$message->email}}"
 						data-name="{{$message->name}}">
 						رد برساله SMS <i class="icon-mobile2"></i>
@@ -47,7 +52,7 @@
 						data-toggle="modal"
 						data-target="#exampleModalEmail"
 						data-phone="{{$message->phone}}"
-						data-email="{{$message->email}}" 
+						data-email="{{$message->email}}"
 						data-name="{{$message->name}}">
 						رد برساله Email <i class="icon-mail5"></i>
 					</div>
@@ -119,7 +124,7 @@
 	</div>
 </div>
 <!-- /Email Modal -->
-	
+
 <!-- javascript -->
 @section('script')
 <script>

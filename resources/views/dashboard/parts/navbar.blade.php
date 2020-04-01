@@ -24,7 +24,7 @@
 					<span class="visible-xs-inline-block position-right">Messages</span>
 					<span class="badge bg-warning-400">{{count(Notification())}}</span>
 				</a>
-				
+
 				<div class="dropdown-menu dropdown-content width-350" style="width: 250px">
 
 					<ul class="media-list dropdown-content-body">
@@ -38,7 +38,7 @@
 										<span class="media-annotation pull-right">{{$n->created_at->diffForHumans()}}</span>
 									</a>
 
-									<span class="text-muted">{{str_limit($n->message,30)}}</span>
+									<span class="text-muted">{{Str::limit($n->message,30)}}</span>
 								</div>
 							</li>
 							<hr>

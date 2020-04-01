@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 	<!-- style -->
 	@section('style')
 		<style type="text/css">
@@ -67,13 +67,13 @@
 		</thead>
 		<tbody>
 			@foreach($messages as $m)
-				
+
 				<tr @if($m->showOrNow == 0) style="background: #e0d0d0" @endif >
 					<td><a href="{{route('showmessage',$m->id)}}">{{$m->name}}</a></td>
 					<td>{{$m->email}}</td>
 					<td>{{$m->phone}}</td>
-					<td><a href="{{route('showmessage',$m->id)}}">{{str_limit($m->message,15)}}</a></td>
-					<td>{{$m->created_at->diffForHumans()}}</td>
+					<td><a href="{{route('showmessage',$m->id)}}">{{Str::limit($m->message,15)}}</a></td>
+					<td>{{$m->created_at ? $m->created_at->diffForHumans() : '-'}}</td>
 					<td>
 					<ul class="icons-list">
 						<li>
@@ -91,7 +91,7 @@
 	</table>
 
 </div>
-	
+
 <!-- javascript -->
 @section('script')
 <script type="text/javascript" src="{{asset('dashboard/js/plugins/tables/datatables/datatables.min.js')}}"></script>

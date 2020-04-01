@@ -79,6 +79,6 @@ class ContactUsController extends Controller
     {
     	Contact::findOrFail($request->id)->delete();
     	Session::flash('success','تم حذف الرساله');
-    	return back();
+    	return redirect('admin/inbox-page');
     }
 }
