@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 	<!-- style -->
 	@section('style')
 		<style type="text/css">
@@ -59,7 +59,7 @@
 				<button class="btn bg-blue btn-block btn-float btn-float-lg openAddModal" type="button" data-toggle="modal" data-target="#exampleModal"><i class="icon-plus3"></i> <span>اضافة عضو</span></button>
 			</div>
 			<div class="col-xs-3">
-				<button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-list-numbered"></i> <span>عدد الاعضاء : {{count($users)}} </span> </button></div>
+				<button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-list-numbered"></i> <span>عدد الاعضاء : {{count($users->toArray())}} </span> </button></div>
 			<div class="col-xs-3">
 				<button class="btn bg-teal-400 btn-block btn-float btn-float-lg correspondent" type="button" data-toggle="modal" data-target="#exampleModal3" ><i class=" icon-station"></i> <span>مراسلة الاعضاء</span></button></div>
 			<div class="col-xs-3">
@@ -90,7 +90,7 @@
 					<td>{{$u->name}}</td>
 					<td>{{$u->email}}</td>
 					<td>{{$u->phone}}</td>
-					@if(is_null($u->Role) ||count($u->Role->role) < 1 )
+					@if(is_null($u->Role))
 					<td>عضو</td>
 					@else
 					<td>{{$u->Role->role}}</td>
@@ -112,10 +112,10 @@
 							<ul class="dropdown-menu dropdown-menu-right">
 								<!-- edit button -->
 								<li>
-									<a href="#" data-toggle="modal" data-target="#exampleModal2" class="openEditmodal" 
-									data-id="{{$u->id}}" 
-									data-phone="{{$u->phone}}" 
-									data-name="{{$u->name}}" 
+									<a href="#" data-toggle="modal" data-target="#exampleModal2" class="openEditmodal"
+									data-id="{{$u->id}}"
+									data-phone="{{$u->phone}}"
+									data-name="{{$u->name}}"
 									data-email="{{$u->email}}"
 									data-photo="{{$u->avatar}}"
 									data-active="{{$u->active}}"
@@ -125,11 +125,11 @@
 								</li>
 								<!-- send message button -->
 								<li>
-									<a href="#" data-toggle="modal" data-target="#exampleModal4" class="SendMessageUser" 
+									<a href="#" data-toggle="modal" data-target="#exampleModal4" class="SendMessageUser"
 									data-id="{{$u->id}}"
 									data-name="{{$u->name}}"
-									data-phone="{{$u->phone}}" 
-									data-device_id="{{$u->device_id}}" 
+									data-phone="{{$u->phone}}"
+									data-device_id="{{$u->device_id}}"
 									data-email="{{$u->email}}">
 									<i class=" icon-bubble9"></i>مراسله
 									</a>
@@ -190,7 +190,7 @@
 							<div style="margin-top: 13px">
 		        			  <label class="checkbox" style="margin-bottom: 0">
 		        			  	<label style="padding-right: 0"> حظر</label>
-		                          <input type="checkbox" name="active" value="0"> 
+		                          <input type="checkbox" name="active" value="0">
 		                          <i class="icon-checkbox"></i>
 	                          </label>
 	                        </div>
@@ -256,12 +256,12 @@
 							<div style="margin-top: 30px">
 		        			  <label class="checkbox" style="margin-bottom: 0">
 		        			  	<label style="padding-right: 0"> حظر</label>
-		                          <input type="checkbox" name="active" id="editActive"  value="0"> 
+		                          <input type="checkbox" name="active" id="editActive"  value="0">
 		                          <i class="icon-checkbox"></i>
 	                          </label>
 	                        </div>
 						</div>
-	        		
+
 				      <div class="col-sm-12" style="margin-top: 10px">
 				      	<button type="submit" class="btn btn-primary" >حفظ التعديلات</button>
 				        <button type="button" class="btn btn-secondary" data-dismiss="modal">أغلاق</button>
@@ -451,7 +451,7 @@
 <script type="text/javascript">
 
 	$('.openEditmodal').on('click',function(){
-		//get valus 
+		//get valus
 		var id         = $(this).data('id')
 		var name       = $(this).data('name')
 		var photo      = $(this).data('photo')
@@ -484,7 +484,7 @@
 		{
 			$('#editActive').attr('checked','')
 		}
-		
+
 
 	})
 
@@ -511,7 +511,7 @@
 	function addChooseFile(){$("input[name='avatar']").click()}
 
 	//stay in current tab after reload
-	$(function() { 
+	$(function() {
 	    // for bootstrap 3 use 'shown.bs.tab', for bootstrap 2 use 'shown' in the next line
 	    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	        // save the latest tab; use cookies if you like 'em better:

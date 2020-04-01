@@ -381,7 +381,6 @@ function send_mobile_sms($numbers, $msg)
         if (in_array(mb_substr($msg, $i, 1, 'UTF-8'), $chrArray)) {
             $strResult .= $unicodeArray[array_search(mb_substr($msg, $i, 1, 'UTF-8'), $chrArray)];
         }
-
     }
 
     $database = SmsEmailNotification::first();
@@ -415,23 +414,22 @@ function send_mobile_sms($numbers, $msg)
 }
 
 #report
-// function Report($user_id, $event)
-// {
-//     $report = new Report;
-//     $user   = User::findOrFail($user_id);
-//     if ($user->role > 0) {
-//         $report->user_id    = $user->id;
-//         $report->event      = 'قام ' . $user->name . ' ' . $event;
-//         $report->supervisor = 1;
-//         $report->save();
-//     } else {
-//         $report->user_id    = $user->id;
-//         $report->event      = 'قام ' . $user->name . ' ' . $event;
-//         $report->supervisor = 0;
-//         $report->save();
-//     }
-
-// }
+function ReportFun($user_id, $event)
+{
+    $report = new Report;
+    $user   = User::findOrFail($user_id);
+    if ($user->role > 0) {
+        $report->user_id    = $user->id;
+        $report->event      = 'قام ' . $user->name . ' ' . $event;
+        $report->supervisor = 1;
+        $report->save();
+    } else {
+        $report->user_id    = $user->id;
+        $report->event      = 'قام ' . $user->name . ' ' . $event;
+        $report->supervisor = 0;
+        $report->save();
+    }
+}
 
 #current route
 function currentRoute()
