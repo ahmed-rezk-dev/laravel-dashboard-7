@@ -1,0 +1,33 @@
+.content {
+    position: relative;
+}
+.loading {
+    position: absolute;
+    z-index: 5;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.loading > .con {
+    padding-top: 80px
+}
+.loading > .logo {
+    width: 290px;
+    height: 60px
+}
+.loading .icon {
+    color: #03A9F4
+}
+.navbar-brand > img {
+    width: 100px;
+    height: 40px;
+}

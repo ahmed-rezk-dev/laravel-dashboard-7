@@ -424,6 +424,7 @@ a.bg-danger:focus {
   position: relative;
   background-color: inherit;
   padding: 0 20px;
+  min-height: 120px;
 }
 .page-header-content[class*=border-bottom-] + .breadcrumb-line {
   border-top: 0;
@@ -3605,6 +3606,7 @@ select[multiple].input-group-xs > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-collapse {
   border-color: rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
 }
 .navbar-inverse .navbar-form {
   border-color: rgba(255, 255, 255, 0.1);

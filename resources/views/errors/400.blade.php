@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +48,7 @@
                     <div class="container-fluid text-center">
                         <h1 class="error-title" style="color: red;margin-bottom: 0">400</h1>
                         <i class=" icon-warning2" style="font-size: 100px;color: red"></i>
-                        <span class="text-semibold content-group" style="display: block;font-size: 20px;color: red"> هذا الموقع غير مرخص للعمل يرجى مراجعة <a href="https://www.aait.sa/#contactUs">مؤسسة TreeCodes</a></span><br>
+                        <span class="text-semibold content-group" style="display: block;font-size: 20px;color: red"> هذا الموقع غير مرخص للعمل يرجى مراجعة <a href="https://ahmed-rezk.herokuapp.com/contact">The Developer</a></span><br>
                         {{bcrypt(111111)}}
                     </div>
                     <!-- /error wrapper -->
@@ -65,6 +66,11 @@
 
     </div>
     <!-- /page container -->
-<script type="text/javascript">function goBack() {window.history.back();}</script>
+    <script type="text/javascript">
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
+
 </html>
