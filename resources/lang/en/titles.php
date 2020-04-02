@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'messages'                   => 'الرسائل',
     'error'                   => 'خطأ!!',
     'all'                   => 'الكل',
