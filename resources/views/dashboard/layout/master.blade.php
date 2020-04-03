@@ -61,9 +61,9 @@
                         <!-- speed access -->
                         <div class="heading-elements">
                             <div class="heading-btn-group">
-                                <a href="{{route('dashboard')}}" class="btn btn-link btn-float has-text"><i class="icon-home4 text-primary"></i> <span>الرئيسيه</span></a>
-                                <a href="{{route('setting')}}" class="btn btn-link btn-float has-text"><i class="icon-cog text-primary"></i> <span>الاعدادات</span></a>
-                                <a href="{{route('logout')}}" class="btn btn-link btn-float has-text"><i class="icon-switch text-primary"></i><span>خروج</span></a>
+                                <a href="{{route('dashboard')}}" class="btn btn-link btn-float has-text"><i class="icon-home4 text-primary"></i> <span>{{__('titles.home')}}</span></a>
+                                <a href="{{route('setting')}}" class="btn btn-link btn-float has-text"><i class="icon-cog text-primary"></i> <span>{{__('titles.settings')}}</span></a>
+                                <a href="{{route('logout')}}" class="btn btn-link btn-float has-text"><i class="icon-switch text-primary"></i><span>{{__('titles.logout')}}</span></a>
                             </div>
                         </div>
                         <!-- /speed access -->
@@ -71,14 +71,14 @@
 
                     <div class="breadcrumb-line">
                         <ul class="breadcrumb">
-                            <li><a href="{{route('dashboard')}}"><i class="icon-home2 position-left"></i> الرئيسيه / </a> {{currentRoute()}}</li>
+                            <li><a href="{{route('dashboard')}}"><i class="icon-home2 position-left"></i> {{__('titles.home')}} / </a> {{currentRoute()}}</li>
                         </ul>
 
                         <ul class="breadcrumb-elements">
                             <li class="dropdown">
                                 <a href="{{route('setting')}}">
                                     <i class="icon-gear position-left"></i>
-                                    الاعدادات
+                                    {{__('titles.settings')}}
                                 </a>
                             </li>
                         </ul>

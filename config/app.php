@@ -181,7 +181,9 @@ return [
         // Google Maper
         Cornford\Googlmapper\MapperServiceProvider::class,
         // Images
-		Intervention\Image\ImageServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        // Translation Manager
+        'Barryvdh\TranslationManager\ManagerServiceProvider',
 
     ],
 
@@ -243,7 +245,7 @@ return [
         // Google Maper
         'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
         // Imgaes
-		'Image' => Intervention\Image\Facades\Image::class,
+        'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

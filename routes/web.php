@@ -64,7 +64,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
     Route::post('send-sms', [
         'uses' => 'ContactUsController@SMS',
         'as'   => 'sendsms',
-        'title' => 'ارسال SMS'
+        'title' => __('titles.by_sms')
     ]);
 
     #send email
@@ -89,7 +89,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
     Route::get('users', [
         'uses' => 'UsersController@Users',
         'as'   => 'users',
-        'title' => 'الاعضاء',
+        'title' => __('titles.users'),
         'icon' => '<i class="icon-vcard"></i>',
         'child' => [
             'adduser',
@@ -174,7 +174,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
     Route::get('reports-page', [
         'uses' => 'ReportsController@ReportsPage',
         'as'   => 'reportspage',
-        'title' => 'التقارير',
+        'title' => __('titles.reports'),
         'icon' => '<i class=" icon-flag7"></i>',
         'child' => ['deleteusersreports', 'deletesupervisorsreports']
     ]);
@@ -199,7 +199,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
     Route::get('permissions-list', [
         'uses' => 'PermissionsController@PermissionsList',
         'as'   => 'permissionslist',
-        'title' => 'قائمة الصلاحيات',
+        'title' => __('titles.permissionslist'),
         'icon' => '<i class="icon-safe"></i>',
         'child' => [
             'addpermissionspage',
@@ -253,7 +253,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
         'uses' => 'MoneyAccountsController@MoneyAccountsPage',
         'as'   => 'moneyaccountspage',
         'icon' => '<i class="icon-cash3"></i>',
-        'title' => 'الحسابات الماليه',
+        'title' => __('titles.moneyaccountspage'),
         'child' => ['moneyaccept', 'moneyacceptdelete', 'moneydelete']
     ]);
 
@@ -285,7 +285,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'Manager', 'checkRol
     Route::get('setting', [
         'uses' => 'SettingController@Setting',
         'as'   => 'setting',
-        'title' => 'الاعدادات',
+        'title' => __('titles.settings'),
         'icon' => '<i class="icon-wrench"></i>',
         'child' => [
             'addsocials',
