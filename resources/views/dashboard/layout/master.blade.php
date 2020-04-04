@@ -94,7 +94,7 @@
                     <div class="loading">
                         <div class="con">
                             <h4><img src="{{asset('dashboard/images/logo.png')}}" class="logo"></h4>
-                            <h3>انتظر من فضلك</h3>
+                            <h3>{{__('titles.pleaseWait')}}</h3>
                             <i class="fa fa-cog fa-spin fa-3x fa-fw icon"></i>
                         </div>
                     </div>
