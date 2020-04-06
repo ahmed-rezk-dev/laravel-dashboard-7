@@ -228,4 +228,11 @@ return array (
   'send' => 'Send',
   'edit_user' => 'Edit User',
   'by_notification' => 'By Notification',
+  'message_from' => 'Message From',
+  'reply_by_email' => 'Reply By Email',
+  'reply_by_sms' => 'Reply By SMS',
+  'reply_by_notification' => 'Reply By Notification',
+  'back_to_index' => 'Back To Index',
+  'send_sms_to' => 'Send SMS To:',
+  'send_email_to' => 'Send Email To:',
 );

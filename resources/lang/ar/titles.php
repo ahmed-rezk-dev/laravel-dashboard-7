@@ -228,4 +228,11 @@ return array (
   'send' => 'ارسال',
   'edit_user' => 'تعديل عضو :',
   'by_notification' => 'ارسال اشعار',
+  'message_from' => 'رساله من',
+  'reply_by_sms' => 'رد برساله SMS',
+  'reply_by_email' => 'رد برساله Email',
+  'reply_by_notification' => 'رد برساله Notification',
+  'back_to_index' => 'عوده لصندوق الوارد',
+  'send_sms_to' => 'ارسال SMS لـ',
+  'send_email_to' => 'ارسال Email لـ',
 );
