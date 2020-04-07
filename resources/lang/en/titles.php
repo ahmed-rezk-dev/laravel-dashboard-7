@@ -238,4 +238,7 @@ return array (
   'users_reports' => 'Users Reports',
   'administrations_reports' => 'Administrations Reports',
   'event' => 'Event',
+  'delete_all' => 'Delete All',
+  'supervisor' => 'Supervisor',
+  'deleted_successfully' => 'Deleted Successfully.',
 );

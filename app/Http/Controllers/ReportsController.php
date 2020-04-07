@@ -26,7 +26,7 @@ class ReportsController extends Controller
         foreach ($usersReports as $r) {
             $r->delete();
         }
-        Session::flash('success', 'تم الحذف');
+        Session::flash('success', __('titles.deleted_successfully'));
         return back();
     }
 
@@ -37,7 +37,7 @@ class ReportsController extends Controller
         foreach ($supervisorReports as $r) {
             $r->delete();
         }
-        Session::flash('success', 'تم الحذف');
+        Session::flash('success', __('titles.deleted_successfully'));
         return back();
     }
 }

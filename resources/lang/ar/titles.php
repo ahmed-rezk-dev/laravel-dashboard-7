@@ -238,4 +238,7 @@ return array (
   'administrations_reports' => 'تقارير المشرفين',
   'event' => 'حدث',
   'users_reports' => 'تقارير الاعضاء',
+  'delete_all' => 'حذف الكل',
+  'supervisor' => 'المشرف',
+  'deleted_successfully' => '.تم الحذف بنحاح',
 );

@@ -13,7 +13,7 @@
 	<div class="col-md-12">
 		<div class="panel panel-flat">
 			<div class="panel-heading">
-				<h6 class="panel-title">التقارير</h6>
+        <h6 class="panel-title">{{__('titles.reports')}}</h6>
 				<div class="heading-elements">
 					<ul class="icons-list">
                 		<li><a data-action="reload"></a></li>
@@ -25,9 +25,9 @@
 				<div class="tabbable">
 					<ul class="nav nav-tabs">
 						<!-- users reports -->
-						<li class="active"><a href="#basic-tab1" data-toggle="tab">تقارير الاعضاء</a></li>
+						<li class="active"><a href="#basic-tab1" data-toggle="tab">{{__('titles.users_reports')}}</a></li>
 						<!-- supervisors reports  -->
-						<li><a href="#basic-tab2" data-toggle="tab">تقارير المشرفين</a></li>
+						<li><a href="#basic-tab2" data-toggle="tab">{{__('titles.administrations_reports')}}</a></li>
 					</ul>
 
 					<div class="tab-content">
@@ -38,9 +38,9 @@
 								<thead>
 
 									<tr>
-										<th style="width: 50px">الوقت</th>
-										<th style="width: 300px;">العضو</th>
-										<th>الحدث</th>
+										<th style="width: 50px">{{__('titles.date')}}</th>
+										<th style="width: 300px;">{{__('titles.user')}}</th>
+										<th>{{__('titles.event')}}</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -58,7 +58,7 @@
 
 												<div class="media-body">
 													<a href="#" class="display-inline-block text-default text-semibold letter-icon-title">{{$r->User->name}}</a>
-													<div class="text-muted text-size-small"><span class="status-mark border-coral position-left"></span>عضو</div>
+													<div class="text-muted text-size-small"><span class="status-mark border-coral position-left"></span>{{__('titles.user')}}</div>
 												</div>
 											</td>
 											<td>
@@ -73,7 +73,7 @@
 										@if(count($usersReports) > 0)
 											<form action="{{route('deleteusersreports')}}" method="post" >
 												{{csrf_field()}}
-												<button type="submit" class="btn btn-xs btn-danger generalDelete" name="">حذف الكل</button>
+												<button type="submit" class="btn btn-xs btn-danger generalDelete" name="">{{__('titles.delete_all')}}</button>
 											</form>
 										@endif
 										</td>
@@ -88,9 +88,9 @@
 							<table class="table text-nowrap">
 								<thead>
 									<tr>
-										<th style="width: 50px">الوقت</th>
-										<th style="width: 300px;">المشرف</th>
-										<th>الحدث</th>
+										<th style="width: 50px">{{__('titles.date')}}</th>
+										<th style="width: 300px;">{{__('titles.supervisor')}}</th>
+										<th>{{__('titles.event')}}</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -123,7 +123,7 @@
 									@if(count($supervisorReports) > 0)
 										<form action="{{route('deletesupervisorsreports')}}" method="post" >
 											{{csrf_field()}}
-											<button type="submit" class="btn btn-xs btn-danger generalDelete" name="">حذف الكل</button>
+											<button type="submit" class="btn btn-xs btn-danger generalDelete" name="">{{__('titles.delete_all')}}</button>
 										</form>
 									@endif
 									</td>
