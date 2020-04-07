@@ -241,4 +241,8 @@ return array (
   'delete_all' => 'Delete All',
   'supervisor' => 'Supervisor',
   'deleted_successfully' => 'Deleted Successfully.',
+  'administration_groups' => 'Administration Groups',
+  'add_group' => 'New Group',
+  'groups_count' => 'Groups Count',
+  'refresh_page' => 'Refresh Page',
 );

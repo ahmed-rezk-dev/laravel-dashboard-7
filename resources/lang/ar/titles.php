@@ -241,4 +241,8 @@ return array (
   'delete_all' => 'حذف الكل',
   'supervisor' => 'المشرف',
   'deleted_successfully' => '.تم الحذف بنحاح',
+  'add_group' => 'اضافة مجموعة',
+  'administration_groups' => 'مجموعات الأدارة',
+  'groups_count' => 'عدد المجموعات',
+  'refresh_page' => 'تحديث الصفحه',
 );

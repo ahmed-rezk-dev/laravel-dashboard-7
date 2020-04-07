@@ -1,9 +1,9 @@
 .navbar-inverse .navbar-collapse {
-  border-color: rgba(0, 0, 0, 0.2);
-  padding: 15px 0;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
 }
 .navbar-header {
-  min-width: 260px;
+    min-width: 260px;
 }
 .content {
     position: relative;
@@ -25,20 +25,37 @@
     flex-direction: column;
 }
 .loading > .con {
-    padding-top: 80px
+    padding-top: 80px;
 }
 .loading > .logo {
     width: 290px;
-    height: 60px
+    height: 60px;
 }
 .loading .icon {
-    color: #03A9F4
+    color: #03a9f4;
 }
 .navbar-brand > img {
     width: 100px;
     height: 40px;
 }
+.dropdown-menu {
+    min-width: 100px;
+}
+.dropdown-menu li button {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 8px 15px;
+    line-height: 1.5384616;
+    white-space: nowrap;
+    text-align: left;
+}
+.dropdown-menu li button:hover {
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+}
 .icon-trash {
-        margin: 0px 8px;
-        color: red;
-    }
+    margin-right: 8px;
+    color: red;
+}
