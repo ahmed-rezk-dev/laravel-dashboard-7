@@ -18,11 +18,6 @@
         margin-right: 11px;
     }
 
-    .icon-trash {
-        margin-left: 8px;
-        color: red;
-    }
-
     .dropdown-menu {
         min-width: 88px;
     }

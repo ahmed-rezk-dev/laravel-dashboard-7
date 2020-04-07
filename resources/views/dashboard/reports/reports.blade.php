@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 <!-- style -->
 @section('style')
 
@@ -146,7 +146,7 @@
 @section('script')
 <script type="text/javascript">
 	//stay in current tab after reload
-	$(function() { 
+	$(function() {
 	    // for bootstrap 3 use 'shown.bs.tab', for bootstrap 2 use 'shown' in the next line
 	    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	        // save the latest tab; use cookies if you like 'em better:

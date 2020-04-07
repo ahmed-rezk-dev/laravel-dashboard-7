@@ -1,3 +1,10 @@
+.navbar-inverse .navbar-collapse {
+  border-color: rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+}
+.navbar-header {
+  min-width: 260px;
+}
 .content {
     position: relative;
 }
@@ -31,3 +38,7 @@
     width: 100px;
     height: 40px;
 }
+.icon-trash {
+        margin: 0px 8px;
+        color: red;
+    }

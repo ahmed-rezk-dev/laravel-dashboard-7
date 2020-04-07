@@ -235,4 +235,7 @@ return array (
   'back_to_index' => 'عوده لصندوق الوارد',
   'send_sms_to' => 'ارسال SMS لـ',
   'send_email_to' => 'ارسال Email لـ',
+  'administrations_reports' => 'تقارير المشرفين',
+  'event' => 'حدث',
+  'users_reports' => 'تقارير الاعضاء',
 );

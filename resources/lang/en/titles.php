@@ -235,4 +235,7 @@ return array (
   'back_to_index' => 'Back To Index',
   'send_sms_to' => 'Send SMS To:',
   'send_email_to' => 'Send Email To:',
+  'users_reports' => 'Users Reports',
+  'administrations_reports' => 'Administrations Reports',
+  'event' => 'Event',
 );

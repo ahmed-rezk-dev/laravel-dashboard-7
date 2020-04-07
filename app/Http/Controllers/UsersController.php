@@ -150,8 +150,7 @@ class UsersController extends Controller
         ]);
 
         $checkConfig = SmsEmailNotification::first();
-        if (
-            $checkConfig->smtp_type         == "" ||
+        if ($checkConfig->smtp_type         == "" ||
             $checkConfig->smtp_username     == "" ||
             $checkConfig->smtp_password     == "" ||
             $checkConfig->smtp_sender_email == "" ||
@@ -207,8 +206,7 @@ class UsersController extends Controller
         ]);
 
         $checkConfig = SmsEmailNotification::first();
-        if (
-            $checkConfig->smtp_type         == "" ||
+        if ($checkConfig->smtp_type         == "" ||
             $checkConfig->smtp_username     == "" ||
             $checkConfig->smtp_password     == "" ||
             $checkConfig->smtp_sender_email == "" ||

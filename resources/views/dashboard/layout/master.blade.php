@@ -11,9 +11,9 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/core.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/components.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/colors.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/custome.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
