@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 	<!-- style -->
 	@section('style')
 		<style type="text/css">
@@ -39,7 +39,7 @@
 @section('content')
 <div class="panel panel-flat">
 	<div class="panel-heading">
-		<h5 class="panel-title">الحسابات الماليه </h5>
+		<h5 class="panel-title">{{__('titles.financial_accounting')}}</h5>
 		<div class="heading-elements">
 			<ul class="icons-list">
         		<li><a data-action="collapse"></a></li>
@@ -52,15 +52,15 @@
 	<table class="table datatable-basic">
 		<thead>
 			<tr>
-				<th>اسم المحول</th>
-				<th>المبلغ</th>
-				<th>الحاله</th>
-				<th>المديونيه</th>
-				<th>البنك المحول له</th>
-				<th>الهاتف</th>
-				<th>الايميل</th>
-				<th>التاريخ</th>
-				<th>التحكم</th>
+				<th>{{__('titles.name')}}</th>
+				<th>{{__('titles.amount')}}</th>
+				<th>{{__('titles.status')}}</th>
+				<th>{{__('titles.debt')}}</th>
+				<th>{{__('titles.bank')}}</th>
+				<th>{{__('titles.phone')}}</th>
+				<th>{{__('titles.email')}}</th>
+				<th>{{__('titles.date')}}</th>
+				<th>{{__('titles.options')}}</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -69,9 +69,9 @@
 					<td>{{$a->User->name}}</td>
 					<td>{{$a->ammount}}</td>
 					@if($a->status < 1)
-					<td><span class="label label-danger">لم يتم التأكيد</span></td>
+					<td><span class="label label-danger">{{__('titles.unconfirmed')}}</span></td>
 					@else
-					<td><span class="label label-success">تم التأكيد</span></td>
+					<td><span class="label label-success">{{__('titles.confirmed')}}</span></td>
 					@endif
 					<td>{{$a->User->arrears}}</td>
 					<td>{{$a->bank_name}}</td>
@@ -93,7 +93,7 @@
 									<input type="hidden" name="id" value="{{$a->User->id}}">
 									<input type="hidden" name="ammount" value="{{$a->ammount}}">
 									<input type="hidden" name="money_id" value="{{$a->id}}">
-									<li><button type="submit" class="confirm reset"><i class="icon-checkmark4"></i>تأكيد</button></li>
+									<li><button type="submit" class="confirm reset"><i class="icon-checkmark4"></i>{{__('titles.confirm')}}</button></li>
 								</form>
 								<!-- accept And delete-->
 								<form action="{{route('moneyacceptdelete')}}" method="post" style="margin-bottom:10px">
@@ -101,14 +101,14 @@
 									<input type="hidden" name="id" value="{{$a->User->id}}">
 									<input type="hidden" name="ammount" value="{{$a->ammount}}">
 									<input type="hidden" name="money_id" value="{{$a->id}}">
-									<li><button type="submit" class="confirm reset"><i class="icon-checkmark4"></i>تأكيد مع حذف</button></li>
+									<li><button type="submit" class="confirm reset"><i class="icon-checkmark4"></i>{{__('titles.confirm_delete')}}</button></li>
 								</form>
 								@endif
 								<!-- delete button -->
 								<form action="{{route('moneydelete')}}" method="post">
 									{{csrf_field()}}
 									<input type="hidden" name="money_id" value="{{$a->id}}">
-									<li><button type="submit" class="generalDelete reset"><i class="icon-trash"></i>حذف</button></li>
+									<li><button type="submit" class="generalDelete reset"><i class="icon-trash"></i>{{__('titles.delete')}}</button></li>
 								</form>
 							</ul>
 						</li>
@@ -128,7 +128,8 @@
 
 <script type="text/javascript">
 $(document).on('click','.confirm',function(e){
-	var result = confirm('هل تريد استمرار تأكيد المعمله ؟ ')
+    const confirmMsg = "{{__('titles.continue_confirmation')}}";
+	var result = confirm(confirmMsg)
 		if(result == false)
 		{
 		e.preventDefault()

@@ -280,4 +280,13 @@ return array (
   'delete_permissions' => 'حذف صلاحيات',
   'update_permissions' => 'تحديث صلاحيات',
   'updating_permissions' => 'تمكين تحديث الصلاحيات',
+  'amount' => 'المبلغ',
+  'bank' => 'بنك',
+  'financial_accounting' => 'الحسابات الماليه',
+  'unconfirmed' => 'تم التأكيد',
+  'confirmed' => 'لم يتم التأكيد',
+  'confirm' => 'تأكيد',
+  'confirm_delete' => 'تأكيد مع حذف',
+  'continue_confirmation' => 'هل تريد الأستمرار ؟',
+  'delete_confirmation' => 'هل تريد استمرار عملية الحذف ؟',
 );

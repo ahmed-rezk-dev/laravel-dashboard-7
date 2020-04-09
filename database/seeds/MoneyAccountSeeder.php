@@ -2,12 +2,13 @@
 
 use Illuminate\Database\Seeder;
 
-class ShopsTableSeeder extends Seeder
+class MoneyAccountSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run()
     {
+        factory('App\MoneyAccount', 10)->create();
     }
 }

@@ -110,7 +110,8 @@
     <script>
         //general delete
         $('.generalDelete').on('click', function(e) {
-            var result = confirm('هل تريد استمرار عملية الحذف ؟ ')
+            const msg = '{{ __("titles.delete_confirmation") }}'
+            var result = confirm(msg)
             if (result == false) {
                 e.preventDefault()
             }

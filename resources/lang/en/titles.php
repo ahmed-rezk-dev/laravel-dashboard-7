@@ -280,4 +280,13 @@ return array (
   'update_permissions' => 'Update Permissions',
   'updating_permissions' => 'Updating Permissions',
   'delete_permissions' => 'Delete Permissions',
+  'financial_accounting' => 'Financial Accounting',
+  'amount' => 'Amount',
+  'bank' => 'Bank',
+  'confirmed' => 'Confirmed',
+  'unconfirmed' => 'Unconfirmed',
+  'confirm' => 'Confirm',
+  'confirm_delete' => 'Confirm & Delete',
+  'continue_confirmation' => 'do you want to continue ?',
+  'delete_confirmation' => 'Do you want to continue deletion?',
 );
