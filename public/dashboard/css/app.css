@@ -1,3 +1,7 @@
+.login-cover {
+    background: url("../images/login_cover.jpg") no-repeat;
+    background-size: cover;
+}
 .navbar-inverse .navbar-collapse {
     border-color: rgba(0, 0, 0, 0.2);
     padding: 15px 0;

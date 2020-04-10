@@ -46,7 +46,7 @@
                     </ul>
 
                     <div class="dropdown-content-footer">
-                        <a href="{{route('inbox')}}" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i>مشاهدة جميع الرسائل</a>
+                        <a href="{{route('inbox')}}" data-popup="tooltip" title="All messages"><i class="icon-menu display-block"></i> {{__('titles.see_all_messages')}}</a>
                     </div>
                 </div>
             </li>

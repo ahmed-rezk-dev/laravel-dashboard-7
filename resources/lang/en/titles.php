@@ -91,7 +91,7 @@ return array (
   'last_name' => 'إسم العائلة',
   'list_offers' => 'أحدث العروض',
   'loading' => 'تحميل...',
-  'login' => 'تسجيل دخول',
+  'login' => 'Login',
   'login_btn' => 'دخول',
   'logo' => 'Logo',
   'logout' => 'Logout',
@@ -141,7 +141,7 @@ return array (
   'questions_answers' => 'أسئلة وأجوبة',
   'recruitment' => 'التوظيف',
   'register' => 'مستخدم جديد',
-  'remember_me' => 'تذكرني',
+  'remember_me' => 'Remember Me',
   'reset_password' => 'تغير كلمة المرور',
   'sales_policy' => 'سياسة البيع',
   'save' => 'Save',
@@ -310,4 +310,5 @@ return array (
   'company_copyright' => 'Company Copyright',
   'no_content' => 'There is no content to display!',
   'copyright' => 'Copyright',
+  'see_all_messages' => 'See all messages.',
 );

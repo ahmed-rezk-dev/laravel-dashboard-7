@@ -10,11 +10,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/icons/icomoon/styles.css')}}"  rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/bootstrap.css')}}"          rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/core.css')}}"               rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/components.css')}}"         rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/colors.css')}}"             rel="stylesheet" type="text/css">
     <link href="{{asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/app.css')}}" rel="stylesheet" type="text/css">
     @yield('style')
     <!-- /global stylesheets -->
 
@@ -53,18 +54,20 @@
                         <div class="panel panel-body login-form">
                             <div class="text-center">
                                 <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
-                                <h5 class="content-group"> تسجيل دخول <small class="display-block"> لوحة تحكم TreeCodes </small></h5>
+                                <h5 class="content-group"> {{__('titles.login')}} <small class="display-block">Dashboard</small></h5>
                             </div>
 
                             <div class="form-group has-feedback has-feedback-left">
-                                <input type="text" class="form-control" placeholder="البريد الالكترونى" name="email" required="required">
+                                <label for='email'>{{__('titles.email')}}: admin@test.com</label>
+                                <input type="text" class="form-control" placeholder="{{__('titles.email')}}" name="email" required="required">
                                 <div class="form-control-feedback">
                                     <i class="icon-user text-muted"></i>
                                 </div>
                             </div>
 
                             <div class="form-group has-feedback has-feedback-left">
-                                <input type="password" class="form-control" placeholder="الرقم السرى" name="password" required="required">
+                                <label for='password'>{{__('titles.password')}}: 123456</label>
+                                <input type="password" class="form-control" placeholder="{{__('titles.password')}}" name="password" required="required">
                                 <div class="form-control-feedback">
                                     <i class="icon-lock2 text-muted"></i>
                                 </div>
@@ -74,8 +77,8 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <label class="checkbox-inline">
+                                            {{__('titles.remember_me')}}
                                             <input type="checkbox" class="styled" checked="checked">
-                                            تذكرنى
                                         </label>
                                     </div>
 
@@ -83,17 +86,17 @@
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn bg-blue btn-block">دخول <i class="icon-arrow-left13 position-right"></i></button>
+                                <button type="submit" class="btn bg-blue btn-block">{{__('titles.login')}} <i class="icon-arrow-left13 position-right"></i></button>
                             </div>
 
-                            
+
                         </div>
                     </form>
                     <!-- /form with validation -->
 
                     <!-- Footer -->
                     <div class="footer text-white">
-                        <a href="#" class="text-white">جميع الحقوق محفوظه لــ TreeCodes &copy; 2017. </a>
+                        <a href="#" class="text-white">Copyright @ Ahmed Rezk 2020</a>
                     </div>
                     <!-- /footer -->
 

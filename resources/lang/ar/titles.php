@@ -310,4 +310,5 @@ return array (
   'company_copyright' => 'حقوق الشركة',
   'no_content' => 'لا يوجد محتوي للعرض!',
   'copyright' => 'الحقوق',
+  'see_all_messages' => 'مشاهدة جميع الرسائل',
 );
