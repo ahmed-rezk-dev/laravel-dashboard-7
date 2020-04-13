@@ -21,6 +21,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "spatie/laravel-analytics": "^3.9",
+        "gd": "*",
         "ext-gd": "*"
     },
     "require-dev": {
