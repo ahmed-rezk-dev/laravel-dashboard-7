@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+URL::forceSchema('https');
 /*---------------------------------Start Of FrontEnd--------------------------*/
 
 /*---------------------------------End Of FrontEnd--------------------------*/
