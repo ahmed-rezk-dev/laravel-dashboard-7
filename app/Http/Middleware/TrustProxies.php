@@ -12,7 +12,11 @@ class TrustProxies extends Middleware
      *
      * @var array|string
      */
-    protected $proxies;
+    protected $proxies = [
+        '192.168.1.1',
+        '192.168.1.2',
+        'https://safe-escarpment-12042.herokuapp.com/',
+    ];
 
     /**
      * The headers that should be used to detect proxies.
