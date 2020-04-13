@@ -9,23 +9,23 @@
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/core.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/components.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('dashboard/css/colors.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('dashboard/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('dashboard/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('dashboard/css/core.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('dashboard/css/components.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{secure_asset('dashboard/css/colors.css')}}" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <script type="text/javascript" src="{{asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
     <!-- /core JS files -->
 
 
     <!-- Theme JS files -->
-    <script type="text/javascript" src="{{asset('dashboard/js/core/app.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/app.js')}}"></script>
     <!-- /theme JS files -->
 
 </head>
