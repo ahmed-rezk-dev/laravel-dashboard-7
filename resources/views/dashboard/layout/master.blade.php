@@ -10,32 +10,32 @@
     <!-- Global stylesheets -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/colors.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/custome.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/app.css')}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{secure_asset('dashboard/checkbox-radio-master/dist/css/checkbox_radio_img_sprite.css')}}">
+    <link href="{{asset('dashboard/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/colors.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/custome.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/app.css')}}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{asset('dashboard/checkbox-radio-master/dist/css/checkbox_radio_img_sprite.css')}}">
 
     @yield('style')
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <script src="{{secure_asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
-    <script src="{{secure_asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
-    <script src="{{secure_asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
-    <script src="{{secure_asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.5/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
-    <script src="{{secure_asset('dashboard/js/core/app.js')}}"></script>
-    <script src="{{secure_asset('dashboard/js/pages/animations_css3.js')}}"></script>
+    <script src="{{asset('dashboard/js/core/app.js')}}"></script>
+    <script src="{{asset('dashboard/js/pages/animations_css3.js')}}"></script>
 </head>
 
 
@@ -93,7 +93,7 @@
                     <!-- loading -->
                     <div class="loading">
                         <div class="con">
-                            <h4><img src="{{secure_asset('dashboard/images/logo.png')}}" class="logo"></h4>
+                            <h4><img src="{{asset('dashboard/images/logo.png')}}" class="logo"></h4>
                             <h3>{{__('titles.pleaseWait')}}</h3>
                             <i class="fa fa-cog fa-spin fa-3x fa-fw icon"></i>
                         </div>

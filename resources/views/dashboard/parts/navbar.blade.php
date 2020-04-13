@@ -1,6 +1,6 @@
 <div class="navbar navbar-inverse">
     <div class="navbar-header">
-        <a class="navbar-brand" href="https://ahmed-rezk.herokuapp.com"><img src="{{secure_asset('dashboard/images/logo_light.png')}}" class="logo"></a>
+        <a class="navbar-brand" href="https://ahmed-rezk.herokuapp.com"><img src="{{asset('dashboard/images/logo_light.png')}}" class="logo"></a>
 
         <ul class="nav navbar-nav visible-xs-block">
             <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>

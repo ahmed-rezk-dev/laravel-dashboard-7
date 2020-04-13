@@ -52,7 +52,7 @@
 											<td>
 												<div class="media-left media-middle">
 													<span class="btn bg-teal-400 btn-rounded btn-icon btn-xs">
-														<img class="img-circle" src="{{secure_asset('dashboard/uploads/users/'.$r->User->avatar)}}">
+														<img class="img-circle" src="{{asset('dashboard/uploads/users/'.$r->User->avatar)}}">
 													</span>
 												</div>
 
@@ -102,7 +102,7 @@
 											<td>
 												<div class="media-left media-middle">
 													<span class="btn bg-teal-400 btn-rounded btn-icon btn-xs">
-														<img class="img-circle" src="{{secure_asset('dashboard/uploads/users/'.$r->User->avatar)}}">
+														<img class="img-circle" src="{{asset('dashboard/uploads/users/'.$r->User->avatar)}}">
 													</span>
 												</div>
 

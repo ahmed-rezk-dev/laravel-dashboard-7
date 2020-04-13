@@ -9,28 +9,28 @@
     <!-- Global stylesheets -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/icons/icomoon/styles.css')}}"  rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/colors.css')}}"             rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{secure_asset('dashboard/css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/icons/icomoon/styles.css')}}"  rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/core.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/ltr/components.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/colors.css')}}"             rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/extras/animate.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('dashboard/css/app.css')}}" rel="stylesheet" type="text/css">
     @yield('style')
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/plugins/loaders/pace.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/core/libraries/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/core/libraries/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/plugins/loaders/blockui.min.js')}}"></script>
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/forms/validation/validate.min.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/forms/styling/uniform.min.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/core/app.js')}}"></script>
-    <script type="text/javascript" src="{{secure_asset('dashboard/js/pages/login_validation.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/plugins/forms/validation/validate.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/plugins/forms/styling/uniform.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/core/app.js')}}"></script>
+    <script type="text/javascript" src="{{asset('dashboard/js/pages/login_validation.js')}}"></script>
 
 </head>
 

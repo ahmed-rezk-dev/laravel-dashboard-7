@@ -2,9 +2,9 @@
 
 <!-- style -->
 @section('style')
-<link href="{{secure_asset('dashboard/fileinput/css/fileinput.min.css')}}" rel="stylesheet" type="text/css">
-<link href="{{secure_asset('dashboard/fileinput/css/fileinput-rtl.min.css')}}" rel="stylesheet" type="text/css">
-<link href="{{secure_asset('dashboard/bgrins/spectrum.css')}}" rel='stylesheet' >
+<link href="{{asset('dashboard/fileinput/css/fileinput.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('dashboard/fileinput/css/fileinput-rtl.min.css')}}" rel="stylesheet" type="text/css">
+<link href="{{asset('dashboard/bgrins/spectrum.css')}}" rel='stylesheet' >
 
 @endsection
 <!-- /style -->
@@ -73,7 +73,7 @@
 													<div class="form-group">
 														<label class="col-lg-3 control-label">{{__('titles.site_logo')}}</label>
 														<div class="col-lg-6">
-															<img src="{{secure_asset('dashboard/uploads/setting/site_logo/'.$SiteSetting->site_logo)}}" title="{{__('titles.site_logo')}}" onclick="sitelogo()" style="height: 210px; width: 210px;cursor: pointer;border-radius:100%">
+															<img src="{{asset('dashboard/uploads/setting/site_logo/'.$SiteSetting->site_logo)}}" title="{{__('titles.site_logo')}}" onclick="sitelogo()" style="height: 210px; width: 210px;cursor: pointer;border-radius:100%">
 															<input type="file" name="logo" id="hidden">
 														</div>
 													</div>
@@ -161,7 +161,7 @@
 												<tbody>
 													@foreach($socials as $social)
 														<tr>
-															<td><img src="{{secure_asset('dashboard/uploads/socialicon/'.$social->logo)}}" style="width:40px;height: 40px" class="img-circle" alt=""></td>
+															<td><img src="{{asset('dashboard/uploads/socialicon/'.$social->logo)}}" style="width:40px;height: 40px" class="img-circle" alt=""></td>
 															<td>{{$social->name}}</td>
 															<td>{{str_limit($social->link,30)}}</td>
 															<td>{{$social->created_at->diffForHumans()}}</td>
@@ -630,7 +630,7 @@
 
 <!-- javascript -->
 @section('script')
-<script src="{{secure_asset('dashboard/bgrins/spectrum.js')}}"></script>
+<script src="{{asset('dashboard/bgrins/spectrum.js')}}"></script>
 
 <script type="text/javascript">
 
@@ -646,7 +646,7 @@
 		$("input[name='id']")           .val(id)
 		$("input[name='edit_site_name']")    .val(name)
 		$("input[name='edit_site_link']")    .val(link)
-		var link = "{{secure_asset('dashboard/uploads/socialicon/')}}" +'/'+ logo
+		var link = "{{asset('dashboard/uploads/socialicon/')}}" +'/'+ logo
 		$(".replaceImage").attr('src',link)
 		$('.editingName').text(name)
 	})
@@ -677,7 +677,7 @@ $(document).on('change','#color',function(){
 });
 </script>
 
-<script type="text/javascript" src="{{secure_asset('dashboard/fileinput/js/fileinput.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/fileinput/js/fileinput.min.js')}}"></script>
 
 @endsection
 <!-- /javascript -->

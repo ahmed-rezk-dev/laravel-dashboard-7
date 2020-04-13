@@ -75,7 +75,7 @@
         <tbody>
             @foreach($users as $u)
             <tr>
-                <td><img src="{{secure_asset('dashboard/uploads/users/'.$u->avatar)}}" style="width:40px;height: 40px" class="img-circle" alt=""></td>
+                <td><img src="{{asset('dashboard/uploads/users/'.$u->avatar)}}" style="width:40px;height: 40px" class="img-circle" alt=""></td>
                 <td>{{$u->name}}</td>
                 <td>{{$u->email}}</td>
                 <td>{{$u->phone}}</td>
@@ -418,9 +418,9 @@
 
 <!-- javascript -->
 @section('script')
-<script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/tables/datatables/datatables.min.js')}}"></script>
-<script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/forms/selects/select2.min.js')}}"></script>
-<script type="text/javascript" src="{{secure_asset('dashboard/js/pages/datatables_basic.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/plugins/tables/datatables/datatables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/plugins/forms/selects/select2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/pages/datatables_basic.js')}}"></script>
 @endsection
 
 
@@ -441,7 +441,7 @@
         $("input[name='edit_name']").val(name)
         $("input[name='edit_phone']").val(phone)
         $("input[name='edit_email']").val(email)
-        var link = "{{secure_asset('dashboard/uploads/users/')}}" + '/' + photo
+        var link = "{{asset('dashboard/uploads/users/')}}" + '/' + photo
         $(".photo").attr('src', link)
         $('.userName').text(name)
 

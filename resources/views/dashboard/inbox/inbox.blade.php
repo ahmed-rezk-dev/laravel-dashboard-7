@@ -88,9 +88,9 @@
 
 <!-- javascript -->
 @section('script')
-<script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/tables/datatables/datatables.min.js')}}"></script>
-<script type="text/javascript" src="{{secure_asset('dashboard/js/plugins/forms/selects/select2.min.js')}}"></script>
-<script type="text/javascript" src="{{secure_asset('dashboard/js/pages/datatables_basic.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/plugins/tables/datatables/datatables.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/plugins/forms/selects/select2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('dashboard/js/pages/datatables_basic.js')}}"></script>
 @endsection
 
 
