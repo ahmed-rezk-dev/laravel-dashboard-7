@@ -1,5 +1,5 @@
 @extends('dashboard.layout.master')
-	
+
 <!-- style -->
 @section('style')
 <style type="text/css">

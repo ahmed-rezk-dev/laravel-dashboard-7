@@ -63,3 +63,6 @@
     margin-right: 8px;
     color: red;
 }
+.panel-edit-permissions .checkbox .icon-checkbox {
+    margin: 0.5rem !important;
+}

@@ -10,7 +10,7 @@
 
 
 
-<div class="panel panel-flat">
+<div class="panel panel-flat panel-edit-permissions">
 	<div class="panel-body">
 		<div class="row">
 			<form action="{{route('updatepermission')}}" method="POST">
