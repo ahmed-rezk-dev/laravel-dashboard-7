@@ -26,7 +26,6 @@ class UsersController extends Controller
      **/
     public function userProfile(Request $request)
     {
-
         $user                       = $request->user();
         $user['basketCount']        = count($user->basket);
         $user['notificationsCount'] = count($user->notifications);
@@ -41,7 +40,6 @@ class UsersController extends Controller
         }
 
         return response()->json(['status' => 'success', 'key' => 1, 'code' => 201, 'message' => '', 'data' => $user]);
-
     }
 
     /**
@@ -84,7 +82,7 @@ class UsersController extends Controller
                 $query->where('user_confirmation', '=', 1)->where('shop_confirmation', '=', 1);
             })
             ->orderBy('id', 'desc')
-            ->get();
+                                        ->get();
 
         return response()->json(['status' => 'success', 'key' => 1, 'code' => 201, 'message' => '', 'data' => $orders]);
     }
@@ -298,7 +296,6 @@ class UsersController extends Controller
      **/
     public function settings(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'lang'          => 'required',
             'notifications' => 'required',
@@ -307,7 +304,6 @@ class UsersController extends Controller
         if ($validator->fails()) {
             return response()->json(['status' => 'fail', 'key' => 0, 'code' => 406, 'message' => $validator->errors()->all(), 'data' => []]);
         } else {
-
             $user     = $request->user();
             $settings = UserSettings::where('user_id', $user->id)->first();
 

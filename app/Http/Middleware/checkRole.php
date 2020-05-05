@@ -20,7 +20,7 @@ class checkRole
     {
         $arr = [];
         $permission = Permission::where('role_id',Auth::user()->role)->select('permissions')->get();
-        foreach($permission as $key=>$per) 
+        foreach($permission as $key=>$per)
         {
             $arr[$key] = $per->permissions;
         }
@@ -32,7 +32,7 @@ class checkRole
         {
             abort('550');
         }
-            
-        
+
+
     }
 }

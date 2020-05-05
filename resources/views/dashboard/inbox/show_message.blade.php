@@ -49,7 +49,7 @@
 
 					</div>
 
-          <div class="btn btn-warning col-sm-3">
+            <div class="btn btn-warning col-sm-3">
                 <a style="color: #fff" href="{{route('inbox')}}">
                     {{__('titles.back_to_index')}}
                     <i class="icon-enter5"></i>
@@ -78,7 +78,7 @@
 						</div>
 
 						<div class="col-sm-12" style="margin-top: 10px">
-							<button type="submit" class="btn btn-primary addCategory"">{{__('titles.send')}}</button>
+							<button type="submit" class="btn btn-primary addCategory">{{__('titles.send')}}</button>
 				        <button type=" button" class="btn btn-secondary" data-dismiss="modal">{{__('titles.close')}}</button>
 						</div>
 
@@ -109,7 +109,7 @@
 						</div>
 
 						<div class="col-sm-12" style="margin-top: 10px">
-							<button type="submit" class="btn btn-primary addCategory"">{{__('titles.send')}}</button>
+							<button type="submit" class="btn btn-primary addCategory">{{__('titles.send')}}</button>
 				        <button type=" button" class="btn btn-secondary" data-dismiss="modal">{{__('titles.close')}}</button>
 						</div>
 
@@ -137,4 +137,6 @@
 		$('input[name="name"]').val($(this).data('name'));
 		$('.reverName').text($(this).data('name'))
 	});
-</script> @endsection @endsection
+</script>
+@endsection
+@endsection
