@@ -45,7 +45,6 @@
                             <a href="https://ahmed-rezk.herokuapp.com/contact">The Developer</a>
                         </span>
                         <br>
-                        {{bcrypt(111111)}}
                     </div>
                     <!-- /error wrapper -->
                 </div>

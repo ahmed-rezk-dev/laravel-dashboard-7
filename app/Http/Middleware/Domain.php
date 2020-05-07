@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use URL;
 use Closure;
 
 class Domain
@@ -22,7 +21,7 @@ class Domain
         } else {
             $dom = 'dashphp.herokuapp.com';
         }
-        if (URL::to('/') !== $dom) {
+        if (Request::server('HTTP_HOST') !== $dom) {
             abort(400);
         }
 
