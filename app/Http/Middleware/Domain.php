@@ -20,7 +20,7 @@ class Domain
         if (env('APP_ENV') === 'local') {
             $dom = 'http://127.0.0.1:8000';
         } else {
-            $dom = 'https://dashphp.herokuapp.com';
+            $dom = 'dashphp.herokuapp.com';
         }
         if (URL::to('/') !== $dom) {
             abort(400);
