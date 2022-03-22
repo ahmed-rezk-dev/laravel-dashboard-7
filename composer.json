@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.2.5",
         "apility/laravel-fcm": "^1.4",
-        "barryvdh/laravel-translation-manager": "^0.5.8",
+        "barryvdh/laravel-translation-manager": "^0.6.2",
         "cornford/googlmapper": "3.*",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
